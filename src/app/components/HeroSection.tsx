@@ -67,7 +67,7 @@ export default function HeroSection() {
           </h5>
         </div>
 
-        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+        <div className=" flex flex-col sm:flex-row gap-4">
           <button className="flex items-center gap-x-2 font-semibold bg-neonPink px-6 py-4 rounded-lg text-white shadow-pinkGlow hover:scale-110 transition-transform hover:shadow-xl hover:shadow-neonPink">
             Deploy Your AI Agent <MdOutlineArrowForwardIos />
           </button>
