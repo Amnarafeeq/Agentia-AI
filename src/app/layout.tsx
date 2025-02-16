@@ -1,5 +1,4 @@
 import "./globals.css";
-// import ParticlesBg from "./components/ParticlesBg";
 
 export default function RootLayout({
   children,
