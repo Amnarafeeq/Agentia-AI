@@ -2,20 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Cyber Grid Animation */
+/* @keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-cyber-grid {
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 100px 100px;
+  animation: moveGrid 5s linear infinite;
+} */
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Neon Glow Effects */
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 5px #00FFFF); }
+  50% { filter: drop-shadow(0 0 15px #00FFFF); }
+  100% { filter: drop-shadow(0 0 5px #00FFFF); }
+}
+
+.drop-shadow-glow {
+  animation: pulseGlow 2s infinite alternate;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 15px #00FFFF;
+}
+
+.shadow-pinkGlow {
+  box-shadow: 0 0 15px #FF007F;
 }
